@@ -1,0 +1,23 @@
+[package]
+name = "inventory"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+name = "inventory"
+path = "src/lib.rs"
+
+[[bin]]
+name = "inventory"
+path = "src/main.rs"
+
+[dependencies]
+actix-web = "4.0"
+chrono = { version = "0.4", features = ["serde"] }
+diesel = { version = "2.0", features = ["postgres", "r2d2", "chrono", "uuid"] }
+dotenv = "0.15"
+serde = { version = "1.0", features = ["derive"] }
+uuid = { version = "1.0", features = ["v4", "serde"] }
+
+[dev-dependencies]
+actix-rt = "2.2"

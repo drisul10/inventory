@@ -1,0 +1,7 @@
+/target
+.env
+.env.autotest
+.env.development
+.env.testing
+.env.staging
+.env.production
